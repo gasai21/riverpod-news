@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:riverpod_news/core/routes/route_names.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -10,6 +12,11 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: Text("Login Screen")));
+    return Scaffold(
+      body: GestureDetector(
+        onTap: () => context.push(RouteNames.home),
+        child: Center(child: Text("Login Screen")),
+      ),
+    );
   }
 }
