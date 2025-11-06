@@ -9,7 +9,7 @@ class AppColors {
   // Menggunakan Navy Blue untuk kesan profesional dan trustworthy
 
   /// Primary color - Navy Blue (profesional, trustworthy)
-  static const Color primary = Color(0xFF1A237E); // Indigo 900
+  static const Color primary = Color.fromARGB(255, 46, 97, 154); // Indigo 900
 
   /// Primary variants
   static const Color primaryLight = Color(0xFF3949AB); // Indigo 600
